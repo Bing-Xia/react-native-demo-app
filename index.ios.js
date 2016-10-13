@@ -5,35 +5,9 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-import { AppRegistry, View, Navigator } from 'react-native';
+import { AppRegistry, Navigator, View, Text, StyleSheet } from 'react-native';
 
-import Home from './app/Home';
-import Detail from './app/Detail';
+import App from './app/App';
 
-class demo_app extends Component {
-  render() {
-    return (
-      <Navigator style={{flex:1}}
-        initialRoute={{ title: 'Home View', id: 'home' }}
-        renderScene={this.navigatorRenderScene}
-        configureScene={this.naviCongif}
-      />
-    )
-  }
 
-  naviConfig(route, navigator) {
-    Navigator.SceneConfigs.FloatFromBottom;
-  }
-
-  navigatorRenderScene(route, navigator) {
-    let _navigator = navigator;
-    switch(route.id) {
-      case 'home':
-        return (<Home navigator={navigator}/>)
-      case 'detail':
-        return (<Home navigator={navigator}/>)
-    }
-  }
-}
-
-AppRegistry.registerComponent('demo_app', () => demo_app);
+AppRegistry.registerComponent('demo_app', () => App);

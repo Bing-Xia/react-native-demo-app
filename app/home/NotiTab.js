@@ -11,7 +11,7 @@ export default class NotiTab extends Component {
 					<Text style={{color: 'orange', fontSize: 14}}>2016-10-10</Text>
 				</View>
 				<View style={styles.notiRow}>
-					<Text>启迪精英1班</Text>
+					<Text>精英1班</Text>
 					<Text>18:00 -- 20:00</Text>
 				</View>
 				<View style={styles.notiRow}>
